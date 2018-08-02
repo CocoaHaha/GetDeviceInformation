@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E47352FB2112E75B004382CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E47352FA2112E75B004382CA /* AppDelegate.m */; };
+		E47353012112E75B004382CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47352FF2112E75B004382CA /* Main.storyboard */; };
+		E47353032112E75B004382CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47353022112E75B004382CA /* Assets.xcassets */; };
+		E47353062112E75B004382CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47353042112E75B004382CA /* LaunchScreen.storyboard */; };
+		E47353092112E75B004382CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E47353082112E75B004382CA /* main.m */; };
+		E47353132112E75C004382CA /* GetDeviceInformationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47353122112E75C004382CA /* GetDeviceInformationTests.m */; };
+		E473531E2112E75C004382CA /* GetDeviceInformationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E473531D2112E75C004382CA /* GetDeviceInformationUITests.m */; };
+		E47353522112E791004382CA /* DDYWifiGateway.c in Sources */ = {isa = PBXBuildFile; fileRef = E473532D2112E791004382CA /* DDYWifiGateway.c */; };
+		E47353532112E791004382CA /* DDYSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E473532E2112E791004382CA /* DDYSystemInfo.m */; };
+		E47353542112E791004382CA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47353362112E791004382CA /* IOKit.framework */; };
+		E47353552112E791004382CA /* DDYBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E47353512112E791004382CA /* DDYBatteryInfo.m */; };
+		E47353592112E7A5004382CA /* DDYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47353562112E7A4004382CA /* DDYTestViewController.m */; };
+		E473535A2112E7A5004382CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47353582112E7A5004382CA /* ViewController.m */; };
+		E473539E2112EF20004382CA /* UIColor+SDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E473539C2112EF20004382CA /* UIColor+SDColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E473530F2112E75C004382CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47352EE2112E75B004382CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E47352F52112E75B004382CA;
+			remoteInfo = GetDeviceInformation;
+		};
+		E473531A2112E75C004382CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47352EE2112E75B004382CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E47352F52112E75B004382CA;
+			remoteInfo = GetDeviceInformation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E47352F62112E75B004382CA /* GetDeviceInformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetDeviceInformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47352F92112E75B004382CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E47352FA2112E75B004382CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E47352FC2112E75B004382CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E47353002112E75B004382CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E47353022112E75B004382CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E47353052112E75B004382CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E47353072112E75B004382CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47353082112E75B004382CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E473530E2112E75C004382CA /* GetDeviceInformationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetDeviceInformationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47353122112E75C004382CA /* GetDeviceInformationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDeviceInformationTests.m; sourceTree = "<group>"; };
+		E47353142112E75C004382CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47353192112E75C004382CA /* GetDeviceInformationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetDeviceInformationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E473531D2112E75C004382CA /* GetDeviceInformationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDeviceInformationUITests.m; sourceTree = "<group>"; };
+		E473531F2112E75C004382CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E473532C2112E791004382CA /* DDYSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYSystemInfo.h; sourceTree = "<group>"; };
+		E473532D2112E791004382CA /* DDYWifiGateway.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DDYWifiGateway.c; sourceTree = "<group>"; };
+		E473532E2112E791004382CA /* DDYSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYSystemInfo.m; sourceTree = "<group>"; };
+		E473532F2112E791004382CA /* DDYWifiGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYWifiGateway.h; sourceTree = "<group>"; };
+		E47353312112E791004382CA /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTypes.h; sourceTree = "<group>"; };
+		E47353322112E791004382CA /* IOKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitKeys.h; sourceTree = "<group>"; };
+		E47353332112E791004382CA /* IOMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMessage.h; sourceTree = "<group>"; };
+		E47353342112E791004382CA /* IOReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOReturn.h; sourceTree = "<group>"; };
+		E47353352112E791004382CA /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMessageNotification.h; sourceTree = "<group>"; };
+		E47353362112E791004382CA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
+		E47353382112E791004382CA /* IOPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPM.h; sourceTree = "<group>"; };
+		E47353392112E791004382CA /* IOPMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPMLib.h; sourceTree = "<group>"; };
+		E473533A2112E791004382CA /* IOPMKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPMKeys.h; sourceTree = "<group>"; };
+		E473533B2112E791004382CA /* IOPMLibDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPMLibDefs.h; sourceTree = "<group>"; };
+		E473533D2112E791004382CA /* IOPSKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPSKeys.h; sourceTree = "<group>"; };
+		E473533E2112E791004382CA /* IOUPSPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOUPSPlugIn.h; sourceTree = "<group>"; };
+		E473533F2112E791004382CA /* IOPowerSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPowerSources.h; sourceTree = "<group>"; };
+		E47353402112E791004382CA /* OSKext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSKext.h; sourceTree = "<group>"; };
+		E47353422112E791004382CA /* IOHIDEventSystemClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventSystemClient.h; sourceTree = "<group>"; };
+		E47353432112E791004382CA /* IOHIDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDService.h; sourceTree = "<group>"; };
+		E47353442112E791004382CA /* IOHIDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDNotification.h; sourceTree = "<group>"; };
+		E47353452112E791004382CA /* IOHIDEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventQueue.h; sourceTree = "<group>"; };
+		E47353462112E791004382CA /* IOHIDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEvent.h; sourceTree = "<group>"; };
+		E47353472112E791004382CA /* IOHIDEventSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventSystem.h; sourceTree = "<group>"; };
+		E47353482112E791004382CA /* IOHIDEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventData.h; sourceTree = "<group>"; };
+		E47353492112E791004382CA /* IOHIDEventTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventTypes.h; sourceTree = "<group>"; };
+		E473534A2112E791004382CA /* IOHIDDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDDisplay.h; sourceTree = "<group>"; };
+		E473534B2112E791004382CA /* IOHIDSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDSession.h; sourceTree = "<group>"; };
+		E473534C2112E791004382CA /* IOHIDUserDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDUserDevice.h; sourceTree = "<group>"; };
+		E473534D2112E791004382CA /* IOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKit.h; sourceTree = "<group>"; };
+		E473534E2112E791004382CA /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
+		E47353502112E791004382CA /* DDYBatteryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYBatteryInfo.h; sourceTree = "<group>"; };
+		E47353512112E791004382CA /* DDYBatteryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYBatteryInfo.m; sourceTree = "<group>"; };
+		E47353562112E7A4004382CA /* DDYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYTestViewController.m; sourceTree = "<group>"; };
+		E47353572112E7A5004382CA /* DDYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYTestViewController.h; sourceTree = "<group>"; };
+		E47353582112E7A5004382CA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E473539C2112EF20004382CA /* UIColor+SDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SDColor.m"; sourceTree = "<group>"; };
+		E473539D2112EF20004382CA /* UIColor+SDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SDColor.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E47352F32112E75B004382CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47353542112E791004382CA /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E473530B2112E75C004382CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47353162112E75C004382CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E47352ED2112E75B004382CA = {
+			isa = PBXGroup;
+			children = (
+				E47352F82112E75B004382CA /* GetDeviceInformation */,
+				E47353112112E75C004382CA /* GetDeviceInformationTests */,
+				E473531C2112E75C004382CA /* GetDeviceInformationUITests */,
+				E47352F72112E75B004382CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E47352F72112E75B004382CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E47352F62112E75B004382CA /* GetDeviceInformation.app */,
+				E473530E2112E75C004382CA /* GetDeviceInformationTests.xctest */,
+				E47353192112E75C004382CA /* GetDeviceInformationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E47352F82112E75B004382CA /* GetDeviceInformation */ = {
+			isa = PBXGroup;
+			children = (
+				E473534F2112E791004382CA /* DDYBatteryInfo */,
+				E473532B2112E791004382CA /* DDYSystemInfo */,
+				E47353302112E791004382CA /* IOKit */,
+				E47352F92112E75B004382CA /* AppDelegate.h */,
+				E47352FA2112E75B004382CA /* AppDelegate.m */,
+				E47352FC2112E75B004382CA /* ViewController.h */,
+				E47353582112E7A5004382CA /* ViewController.m */,
+				E47353572112E7A5004382CA /* DDYTestViewController.h */,
+				E47353562112E7A4004382CA /* DDYTestViewController.m */,
+				E473539D2112EF20004382CA /* UIColor+SDColor.h */,
+				E473539C2112EF20004382CA /* UIColor+SDColor.m */,
+				E47352FF2112E75B004382CA /* Main.storyboard */,
+				E47353022112E75B004382CA /* Assets.xcassets */,
+				E47353042112E75B004382CA /* LaunchScreen.storyboard */,
+				E47353072112E75B004382CA /* Info.plist */,
+				E47353082112E75B004382CA /* main.m */,
+			);
+			path = GetDeviceInformation;
+			sourceTree = "<group>";
+		};
+		E47353112112E75C004382CA /* GetDeviceInformationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E47353122112E75C004382CA /* GetDeviceInformationTests.m */,
+				E47353142112E75C004382CA /* Info.plist */,
+			);
+			path = GetDeviceInformationTests;
+			sourceTree = "<group>";
+		};
+		E473531C2112E75C004382CA /* GetDeviceInformationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E473531D2112E75C004382CA /* GetDeviceInformationUITests.m */,
+				E473531F2112E75C004382CA /* Info.plist */,
+			);
+			path = GetDeviceInformationUITests;
+			sourceTree = "<group>";
+		};
+		E473532B2112E791004382CA /* DDYSystemInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E473532C2112E791004382CA /* DDYSystemInfo.h */,
+				E473532E2112E791004382CA /* DDYSystemInfo.m */,
+				E473532F2112E791004382CA /* DDYWifiGateway.h */,
+				E473532D2112E791004382CA /* DDYWifiGateway.c */,
+			);
+			path = DDYSystemInfo;
+			sourceTree = "<group>";
+		};
+		E47353302112E791004382CA /* IOKit */ = {
+			isa = PBXGroup;
+			children = (
+				E47353312112E791004382CA /* IOTypes.h */,
+				E47353322112E791004382CA /* IOKitKeys.h */,
+				E47353332112E791004382CA /* IOMessage.h */,
+				E47353342112E791004382CA /* IOReturn.h */,
+				E47353352112E791004382CA /* OSMessageNotification.h */,
+				E47353362112E791004382CA /* IOKit.framework */,
+				E47353372112E791004382CA /* pwr_mgt */,
+				E473533C2112E791004382CA /* ps */,
+				E47353402112E791004382CA /* OSKext.h */,
+				E47353412112E791004382CA /* hid */,
+				E473534D2112E791004382CA /* IOKit.h */,
+				E473534E2112E791004382CA /* IOKitLib.h */,
+			);
+			path = IOKit;
+			sourceTree = "<group>";
+		};
+		E47353372112E791004382CA /* pwr_mgt */ = {
+			isa = PBXGroup;
+			children = (
+				E47353382112E791004382CA /* IOPM.h */,
+				E47353392112E791004382CA /* IOPMLib.h */,
+				E473533A2112E791004382CA /* IOPMKeys.h */,
+				E473533B2112E791004382CA /* IOPMLibDefs.h */,
+			);
+			path = pwr_mgt;
+			sourceTree = "<group>";
+		};
+		E473533C2112E791004382CA /* ps */ = {
+			isa = PBXGroup;
+			children = (
+				E473533D2112E791004382CA /* IOPSKeys.h */,
+				E473533E2112E791004382CA /* IOUPSPlugIn.h */,
+				E473533F2112E791004382CA /* IOPowerSources.h */,
+			);
+			path = ps;
+			sourceTree = "<group>";
+		};
+		E47353412112E791004382CA /* hid */ = {
+			isa = PBXGroup;
+			children = (
+				E47353422112E791004382CA /* IOHIDEventSystemClient.h */,
+				E47353432112E791004382CA /* IOHIDService.h */,
+				E47353442112E791004382CA /* IOHIDNotification.h */,
+				E47353452112E791004382CA /* IOHIDEventQueue.h */,
+				E47353462112E791004382CA /* IOHIDEvent.h */,
+				E47353472112E791004382CA /* IOHIDEventSystem.h */,
+				E47353482112E791004382CA /* IOHIDEventData.h */,
+				E47353492112E791004382CA /* IOHIDEventTypes.h */,
+				E473534A2112E791004382CA /* IOHIDDisplay.h */,
+				E473534B2112E791004382CA /* IOHIDSession.h */,
+				E473534C2112E791004382CA /* IOHIDUserDevice.h */,
+			);
+			path = hid;
+			sourceTree = "<group>";
+		};
+		E473534F2112E791004382CA /* DDYBatteryInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E47353502112E791004382CA /* DDYBatteryInfo.h */,
+				E47353512112E791004382CA /* DDYBatteryInfo.m */,
+			);
+			path = DDYBatteryInfo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E47352F52112E75B004382CA /* GetDeviceInformation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47353222112E75C004382CA /* Build configuration list for PBXNativeTarget "GetDeviceInformation" */;
+			buildPhases = (
+				E47352F22112E75B004382CA /* Sources */,
+				E47352F32112E75B004382CA /* Frameworks */,
+				E47352F42112E75B004382CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GetDeviceInformation;
+			productName = GetDeviceInformation;
+			productReference = E47352F62112E75B004382CA /* GetDeviceInformation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E473530D2112E75C004382CA /* GetDeviceInformationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47353252112E75C004382CA /* Build configuration list for PBXNativeTarget "GetDeviceInformationTests" */;
+			buildPhases = (
+				E473530A2112E75C004382CA /* Sources */,
+				E473530B2112E75C004382CA /* Frameworks */,
+				E473530C2112E75C004382CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E47353102112E75C004382CA /* PBXTargetDependency */,
+			);
+			name = GetDeviceInformationTests;
+			productName = GetDeviceInformationTests;
+			productReference = E473530E2112E75C004382CA /* GetDeviceInformationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E47353182112E75C004382CA /* GetDeviceInformationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47353282112E75C004382CA /* Build configuration list for PBXNativeTarget "GetDeviceInformationUITests" */;
+			buildPhases = (
+				E47353152112E75C004382CA /* Sources */,
+				E47353162112E75C004382CA /* Frameworks */,
+				E47353172112E75C004382CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E473531B2112E75C004382CA /* PBXTargetDependency */,
+			);
+			name = GetDeviceInformationUITests;
+			productName = GetDeviceInformationUITests;
+			productReference = E47353192112E75C004382CA /* GetDeviceInformationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E47352EE2112E75B004382CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = CocoHaHa;
+				TargetAttributes = {
+					E47352F52112E75B004382CA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E473530D2112E75C004382CA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E47352F52112E75B004382CA;
+					};
+					E47353182112E75C004382CA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E47352F52112E75B004382CA;
+					};
+				};
+			};
+			buildConfigurationList = E47352F12112E75B004382CA /* Build configuration list for PBXProject "GetDeviceInformation" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E47352ED2112E75B004382CA;
+			productRefGroup = E47352F72112E75B004382CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E47352F52112E75B004382CA /* GetDeviceInformation */,
+				E473530D2112E75C004382CA /* GetDeviceInformationTests */,
+				E47353182112E75C004382CA /* GetDeviceInformationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E47352F42112E75B004382CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47353062112E75B004382CA /* LaunchScreen.storyboard in Resources */,
+				E47353032112E75B004382CA /* Assets.xcassets in Resources */,
+				E47353012112E75B004382CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E473530C2112E75C004382CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47353172112E75C004382CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E47352F22112E75B004382CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E473535A2112E7A5004382CA /* ViewController.m in Sources */,
+				E47353532112E791004382CA /* DDYSystemInfo.m in Sources */,
+				E473539E2112EF20004382CA /* UIColor+SDColor.m in Sources */,
+				E47353092112E75B004382CA /* main.m in Sources */,
+				E47352FB2112E75B004382CA /* AppDelegate.m in Sources */,
+				E47353522112E791004382CA /* DDYWifiGateway.c in Sources */,
+				E47353592112E7A5004382CA /* DDYTestViewController.m in Sources */,
+				E47353552112E791004382CA /* DDYBatteryInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E473530A2112E75C004382CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47353132112E75C004382CA /* GetDeviceInformationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47353152112E75C004382CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E473531E2112E75C004382CA /* GetDeviceInformationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E47353102112E75C004382CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E47352F52112E75B004382CA /* GetDeviceInformation */;
+			targetProxy = E473530F2112E75C004382CA /* PBXContainerItemProxy */;
+		};
+		E473531B2112E75C004382CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E47352F52112E75B004382CA /* GetDeviceInformation */;
+			targetProxy = E473531A2112E75C004382CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E47352FF2112E75B004382CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47353002112E75B004382CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E47353042112E75B004382CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47353052112E75B004382CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E47353202112E75C004382CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E47353212112E75C004382CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E47353232112E75C004382CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X76LH572J4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GetDeviceInformation/IOKit",
+				);
+				INFOPLIST_FILE = GetDeviceInformation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocohaha.TsetSysterm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E47353242112E75C004382CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X76LH572J4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GetDeviceInformation/IOKit",
+				);
+				INFOPLIST_FILE = GetDeviceInformation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocohaha.TsetSysterm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E47353262112E75C004382CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X76LH572J4;
+				INFOPLIST_FILE = GetDeviceInformationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocohaha.GetDeviceInformationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetDeviceInformation.app/GetDeviceInformation";
+			};
+			name = Debug;
+		};
+		E47353272112E75C004382CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X76LH572J4;
+				INFOPLIST_FILE = GetDeviceInformationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocohaha.GetDeviceInformationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetDeviceInformation.app/GetDeviceInformation";
+			};
+			name = Release;
+		};
+		E47353292112E75C004382CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X76LH572J4;
+				INFOPLIST_FILE = GetDeviceInformationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocohaha.GetDeviceInformationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GetDeviceInformation;
+			};
+			name = Debug;
+		};
+		E473532A2112E75C004382CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X76LH572J4;
+				INFOPLIST_FILE = GetDeviceInformationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocohaha.GetDeviceInformationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GetDeviceInformation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E47352F12112E75B004382CA /* Build configuration list for PBXProject "GetDeviceInformation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47353202112E75C004382CA /* Debug */,
+				E47353212112E75C004382CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47353222112E75C004382CA /* Build configuration list for PBXNativeTarget "GetDeviceInformation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47353232112E75C004382CA /* Debug */,
+				E47353242112E75C004382CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47353252112E75C004382CA /* Build configuration list for PBXNativeTarget "GetDeviceInformationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47353262112E75C004382CA /* Debug */,
+				E47353272112E75C004382CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47353282112E75C004382CA /* Build configuration list for PBXNativeTarget "GetDeviceInformationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47353292112E75C004382CA /* Debug */,
+				E473532A2112E75C004382CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E47352EE2112E75B004382CA /* Project object */;
+}
